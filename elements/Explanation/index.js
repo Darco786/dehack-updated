@@ -38,7 +38,7 @@ const Explanation = ({ width }) => {
         <div className='blue'></div>
         </div>
         <div className='bg-[#141414] rounded-[20px] md:rounded-[40px] p-10 py-16 md:p-16 lg:p-24 flex flex-col gap-12 items-center'>
-            <h3 className='text-center font-thin text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl'>How <span className='font-normal'>DeHack</span> Works</h3>
+            <h3 className='text-center font-thin text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl'>How <span className='font-normal'>DeHack</span> Secures..</h3>
             <div className='w-full max-w-2xl line'></div>
             <div className='flex flex-col gap-16 lg:gap-28'>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:px-6 lg:px-20'>

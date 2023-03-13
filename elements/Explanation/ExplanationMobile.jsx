@@ -4,7 +4,7 @@ import React from 'react'
 const ExplanationMobile = ({ explanation, data  }) => {
   return (
     <div className='md:hidden explanation-mobile how-works-gradient p-8 px-10 md:px-16 xl:px-20 rounded-[20px] min-h-[215px] flex xl:items-center flex-col-reverse md:flex-col xl:flex-row relative'>
-        <ul className='flex flex-col transitions gap-2 list-disc md:text-xl 2xl:text-2xl md:font-[250] spacing'>
+        <ul className='flex flex-col transitions gap-2 list-none md:text-xl 2xl:text-2xl md:font-[250] spacing'>
             {data[explanation].items.map((item, i) => (
             <li key={i}>{item}</li>
             ))}
