@@ -26,7 +26,10 @@ import Web3 from '@/public/icons/Web3.svg'
 import Container from '@/elements/Container'
 import useWindowSize from '@/hooks/useSize'
 
-const IBM = IBM_Plex_Mono({ subsets: ['latin'], weight: ['500', '700', '400', '600'] })
+const IBM = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['500', '700', '400', '600'],
+})
 
 export default function Home() {
   const { width } = useWindowSize()
@@ -38,35 +41,64 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-[#000000]/95 backdrop-blur-lg min-h-screen'>
+      <main className="bg-[#000000]/95 backdrop-blur-lg min-h-screen">
         <Header />
         <LandingSection image={Grid2} IBM={IBM} />
         <StatsSection IBM={IBM} />
-        <ServicesSection width={width} images={[Rectangle, Icon2, Icon1, Icon3]} IBM={IBM} />
-        <WorksSection width={width} images={[Defi, Governance, Metaverse ,Wallet, Defi, Governance, Metaverse ,Web3]} />
+        <ServicesSection
+          width={width}
+          images={[Rectangle, Icon2, Icon1, Icon3]}
+          IBM={IBM}
+        />
+        <WorksSection
+          width={width}
+          images={[
+            Defi,
+            Governance,
+            Metaverse,
+            Wallet,
+            Defi,
+            Governance,
+            Metaverse,
+            Web3,
+          ]}
+        />
         <section>
-        <Container>
-          <div className='flex gap-2 items-center'>
-            <div className='supported-line flex-1 hidden md:block'></div>
-            <h4 className='text-xl mx-auto md:text-4xl uppercase text-white md:text-[#8D8D8D] font-[250] tracking-[3px] md:tracking-wider px-6'>Supported Blockchains</h4>
-            <div className='supported-line rotate-180 flex-1 hidden md:block'></div>
-          </div>
-          <Image className='mx-auto mt-5 md:mt-10' src={width >= 768 ? Supported : SupportedMobile} alt='Supported' />
-        </Container>
+          <Container>
+            <div className="flex gap-2 items-center">
+              <div className="supported-line flex-1 hidden md:block"></div>
+              <h4 className="text-xl mx-auto md:text-4xl uppercase text-white md:text-[#8D8D8D] font-[250] tracking-[3px] md:tracking-wider px-6">
+                Supported Blockchains
+              </h4>
+              <div className="supported-line rotate-180 flex-1 hidden md:block"></div>
+            </div>
+            <Image
+              className="mx-auto mt-5 md:mt-10"
+              src={width >= 768 ? Supported : SupportedMobile}
+              alt="Supported"
+            />
+          </Container>
         </section>
         <Banner />
-        <Explanation width={width}/>
+        <Explanation width={width} />
         <Mission />
-        <section className='py-20 px-4  text-white text-center'>
-          <div className='mx-auto flex flex-col items-center gap-6 max-w-2xl'>
+        <section className="py-20 px-4  text-white text-center">
+          <div className="mx-auto flex flex-col items-center gap-6 max-w-2xl">
             <p>
-                <span className={`text-7xl ${IBM.className} font-bold`}>350</span>
-                <span className={`text-7xl dollar ${IBM.className} font-bold`}>+</span>
+              <span className={`text-7xl font-bold`}>350</span>
+              <span className={`text-7xl dollar ${IBM.className} font-bold`}>
+                +
+              </span>
             </p>
-            <p className='text-lg md:text-3xl font-[250] max-w-xl spacing'>
-            projects have <span className='font-normal'>signed</span> up to try our Beta.
+            <p className="text-xl md:text-3xl font-[250] max-w-xl spacing">
+              projects have <span className="font-normal">signed</span> up to
+              try our Beta.
             </p>
-            <p className={`md:text-xl px-4 md:px-0 text-[#CFCFCF] font-light ${IBM.className}`}>Limited spots remaining!</p>
+            <p
+              className={`md:text-xl px-4 md:px-0 text-[#CFCFCF] font-light ${IBM.className}`}
+            >
+              Limited spots remaining!
+            </p>
           </div>
         </section>
         <Waitlist IBM={IBM} />

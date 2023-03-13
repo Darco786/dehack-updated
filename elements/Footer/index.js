@@ -1,29 +1,28 @@
 // import Image from "next/image"
 // import Link from "next/link"
-import Container from "../Container"
+import Container from '../Container'
 // import Twitter from '../../public/icons/Twitter.svg'
 // import Medium from '../../public/icons/Medium.svg'
 // import Github from '../../public/icons/Github.svg'
 // import Telegram from '../../public/icons/Telegram.svg'
 // import LinkedIn from '../../public/icons/LinkedIn.svg'
-import { useState } from "react"
+import { useState } from 'react'
 // import FooterList from "./FooterList"
 
-const Footer = ({ IBM, width  }) => {
-    const [footerItem, setFooterItem] = useState(0);
+const Footer = ({ IBM, width }) => {
+  const [footerItem, setFooterItem] = useState(0)
 
-    const handleFooterActive = (number) => {
-        if(number === footerItem) return setFooterItem(0);
-        setFooterItem(number)
-    }
+  const handleFooterActive = (number) => {
+    if (number === footerItem) return setFooterItem(0)
+    setFooterItem(number)
+  }
   return (
-    <footer className='mt-10 text-[#929292]'>
-        <Container>
-        <div className='w-full line'></div>
+    <footer className="mt-10 text-[#929292]">
+      <Container>
+        <div className="w-full line"></div>
         <div className="pt-12 text-center pb-8">
-            <h1 className="text-white font-[900] text-4xl">DeHack</h1>
-            <p className="text-white text-sm">Using AI to secure Web3.</p>
-
+          <h1 className="text-white font-[900] text-4xl">DeHack</h1>
+          <p className="text-white text-sm">Using AI to secure Web3.</p>
         </div>
         {/* <div className='py-16 lg:py-32 px-10 lg:px-16 flex flex-wrap flex-col items-center md:items-start md:flex-row gap-10 lg:justify-between'>
             <div>
@@ -65,11 +64,13 @@ const Footer = ({ IBM, width  }) => {
                 <li>Cookies Policy</li>
             </FooterList>
         </div> */}
-        <div className='w-full footer-line'></div>
-        <div className='text-center p-4'>
-            <p className="spacing text-sm md:text-lg tracking-widest footer-text font-thin md:font-normal text-white md:text-inherit">All Rights Reserved {width >= 768 ? '|' : <br /> } DeHack 2023</p>
+        <div className="w-full footer-line"></div>
+        <div className="text-center p-4">
+          <p className="spacing text-sm md:text-lg tracking-widest footer-text font-thin md:font-normal text-white md:text-inherit">
+            All Rights Reserved {width >= 768 ? '|' : <br />} DeHack 2023
+          </p>
         </div>
-        </Container>
+      </Container>
     </footer>
   )
 }
