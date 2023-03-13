@@ -23,7 +23,7 @@ const Prevent = ({ image, IBM, serviceTitle, shortDesc, desc }) => {
             style={{ margin: 0 }}
             options={defaultOptions}
             className="loti-1"
-            width={100}
+            width={150}
           />
           <div className="flex flex-col gap-1 2xl:gap-2">
             <h4

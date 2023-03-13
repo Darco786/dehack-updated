@@ -4,7 +4,7 @@
     'static/chunks/ea88be26-3cdde98635804176.js',
     'static/css/33cdbccfa26f416a.css',
     'static/chunks/747-625cbdfe991dc7b7.js',
-    'static/chunks/pages/index-067158738ade409a.js',
+    'static/chunks/pages/index-fa7a2f0600c6af5a.js',
   ],
   '/_error': ['static/chunks/pages/_error-e4f561a102d9bb14.js'],
   sortedPages: ['/', '/_app', '/_error'],

@@ -588,7 +588,7 @@
                         },
                       },
                       className: 'loti-1',
-                      width: 100,
+                      width: 150,
                     }),
                     (0, s.jsxs)('div', {
                       className: 'flex flex-col gap-1 2xl:gap-2',
@@ -1383,10 +1383,10 @@
                 (0, s.jsx)('link', { rel: 'icon', href: '/favicon.ico' }),
               ],
             }),
+            (0, s.jsx)(u, {}),
             (0, s.jsxs)('main', {
               className: 'bg-[#000000]/95 backdrop-blur-lg min-h-screen',
               children: [
-                (0, s.jsx)(u, {}),
                 (0, s.jsx)(E, { image: j, IBM: l() }),
                 (0, s.jsx)(B, { IBM: l() }),
                 (0, s.jsx)(H, { width: e, images: [f, v, b, y], IBM: l() }),

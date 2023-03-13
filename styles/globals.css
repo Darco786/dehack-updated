@@ -103,10 +103,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 767px) {
-  .gradient {
-    /* animation: none; */
-  }
-
   .footer-text {
     font-family: 'Brinnan', sans-serif !important;
   }
