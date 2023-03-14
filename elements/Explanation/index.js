@@ -7,6 +7,7 @@ import Detect from '../../public/icons/Detect.svg'
 import Prevent from '../../public/icons/Prevent.svg'
 import Image from 'next/image'
 import ExplanationMobile from './ExplanationMobile'
+import detectOS from '@/utils/detectOS'
 
 const data = {
   Monitor: {
@@ -44,10 +45,12 @@ const Explanation = ({ width }) => {
   return (
     <section className="py-20 px-4 text-white">
       <Container className="relative xl:!px-20">
-        <div className="flex items-center absolute gradient">
-          <div className="green"></div>
-          <div className="blue"></div>
-        </div>
+        {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
+          <div className="flex items-center absolute gradient">
+            <div className="green"></div>
+            <div className="blue"></div>
+          </div>
+        )}
         <div className="bg-[#141414] rounded-[20px] md:rounded-[40px] p-10 py-16 md:p-16 lg:p-24 flex flex-col gap-12 items-center">
           <h3 className="text-center font-thin text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl">
             How <span className="font-normal">DeHack</span> Secures..

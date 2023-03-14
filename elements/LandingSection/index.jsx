@@ -1,4 +1,5 @@
 import Button from '@/components/Button'
+import detectOS from '@/utils/detectOS'
 import Image from 'next/image'
 import React from 'react'
 import Container from '../Container'
@@ -15,10 +16,12 @@ const LandingSection = ({ IBM, image }) => {
             className="w-full h-full lines-image mx-auto"
           />
         </div>
-        <div className="flex items-center absolute gradient">
-          <div className="green"></div>
-          <div className="blue"></div>
-        </div>
+        {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
+          <div className="flex items-center absolute gradient">
+            <div className="green"></div>
+            <div className="blue"></div>
+          </div>
+        )}
         <h3 className="text-[#CFCFCF] text-2xl md:text-4xl">
           Use Intelligence To
         </h3>
