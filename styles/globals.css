@@ -23,9 +23,47 @@ body::-webkit-scrollbar {
 }
 
 .text-animation {
+  -webkit-animation: text 5000ms 800ms infinite ease-in-out;
   animation: text 5000ms 800ms infinite ease-in-out;
+  -webkit-animation-fill-mode: alternate;
   animation-fill-mode: alternate;
 }
+
+
+@-webkit-keyframes text {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  14% {
+    -webkit-transform: translateY(0);
+  }
+
+  28% {
+    -webkit-transform: translateY(calc(-100% / 4));
+  }
+
+  42% {
+    -webkit-transform: translateY(calc(-100% / 4));
+  }
+
+  56% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  70% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  85% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+  }
+
+  100% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+  }
+}
+
 
 @keyframes text {
   0% {
@@ -98,7 +136,9 @@ body::-webkit-scrollbar {
 }
 
 .gradient {
+  -webkit-animation: bg linear infinite 6000ms;
   animation: bg linear infinite 6000ms;
+  -webkit-perspective-origin: center center;
   perspective-origin: center center;
 }
 
@@ -121,7 +161,9 @@ body::-webkit-scrollbar {
 }
 
 .lines {
+  -webkit-animation: lines 2000ms ease-in-out infinite alternate;
   animation: lines 2000ms ease-in-out infinite alternate;
+  -webkit-transform-origin: center center;
   transform-origin: center center;
 }
 
@@ -169,6 +211,7 @@ body::-webkit-scrollbar {
 }
 
 .fade {
+ -webkit-animation:  fadeInAnimation ease 3s;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
