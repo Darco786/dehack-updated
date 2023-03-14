@@ -293,6 +293,7 @@ body::-webkit-scrollbar {
   height: 300px;
   background: rgba(62, 193, 0, 0.5);
   filter: blur(100px);
+  -webkit-filter: blur(100px);
 }
 
 .blue {
@@ -300,6 +301,7 @@ body::-webkit-scrollbar {
   height: 200px;
   background: rgba(56, 176, 227, 0.5);
   filter: blur(100px);
+  -webkit-filter: blur(100px);
 }
 
 .gradient {
@@ -322,12 +324,14 @@ body::-webkit-scrollbar {
     width: 140px;
     height: 140px;
     filter: blur(60px);
+    -webkit-filter: blur(60px);
   }
 
   .blue {
     width: 140px;
     height: 100px;
     filter: blur(60px);
+    -webkit-filter: blur(60px);
   }
 }
 
@@ -365,7 +369,9 @@ body::-webkit-scrollbar {
 .swiper-button-disabled {
   pointer-events: none;
   filter: brightness(100);
+  -webkit-filter: brightness(100);
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   opacity: 0.7;
 }
 
@@ -377,6 +383,7 @@ body::-webkit-scrollbar {
   .how-works-gradient {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     backdrop-filter: blur(5px);
+    backdrop--webkit-filter: blur(5px);
     border-radius: 10px;
   }
 }
