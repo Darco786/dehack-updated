@@ -23,79 +23,246 @@ body::-webkit-scrollbar {
 }
 
 .text-animation {
+  animation: text 5000ms 800ms infinite ease-in-out alternate;
   -webkit-animation: text 5000ms 800ms infinite ease-in-out;
-  animation: text 5000ms 800ms infinite ease-in-out;
-  -webkit-animation-fill-mode: alternate;
-  animation-fill-mode: alternate;
+  -moz-animation: text 5000ms 800ms infinite ease-in-out;
+  -o-animation: text 5000ms 800ms infinite ease-in-out;
+  -webkit-animation-name: text;
+  -webkit-animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
 }
-
 
 @-webkit-keyframes text {
   0% {
     -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 
   14% {
     -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 
   28% {
     -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
   }
 
   42% {
     -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
   }
 
   56% {
     -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
   }
 
   70% {
     -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
   }
 
   85% {
     -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
   }
 
   100% {
     -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
   }
 }
 
-
 @keyframes text {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 
   14% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 
   28% {
-    transform: translateY(calc(-100% / 4));
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
   }
 
   42% {
-    transform: translateY(calc(-100% / 4));
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
   }
 
   56% {
-    transform: translateY(calc(-100% / 4 * 2));
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
   }
 
   70% {
-    transform: translateY(calc(-100% / 4 * 2));
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
   }
 
   85% {
-    transform: translateY(calc(-100% / 4 * 3));
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
   }
 
   100% {
-    transform: translateY(calc(-100% / 4 * 3));
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
+  }
+}
+
+@-moz-keyframes text {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+
+  14% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+
+  28% {
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
+  }
+
+  42% {
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
+  }
+
+  56% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  70% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  85% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
+  }
+
+  100% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
+  }
+}
+
+@-o-keyframes text {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+
+  14% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+
+  28% {
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
+  }
+
+  42% {
+    -webkit-transform: translateY(calc(-100% / 4));
+    -moz-transform: translateY(calc(-100% / 4));
+    -o-transform: translateY(calc(-100% / 4));
+    -ms-transform: translateY(calc(-100% / 4));
+  }
+
+  56% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  70% {
+    -webkit-transform: translateY(calc(-100% / 4 * 2));
+    -moz-transform: translateY(calc(-100% / 4 * 2));
+    -o-transform: translateY(calc(-100% / 4 * 2));
+    -ms-transform: translateY(calc(-100% / 4 * 2));
+  }
+
+  85% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
+  }
+
+  100% {
+    -webkit-transform: translateY(calc(-100% / 4 * 3));
+    -moz-transform: translateY(calc(-100% / 4 * 3));
+    -o-transform: translateY(calc(-100% / 4 * 3));
+    -ms-transform: translateY(calc(-100% / 4 * 3));
   }
 }
 
@@ -136,10 +303,14 @@ body::-webkit-scrollbar {
 }
 
 .gradient {
-  -webkit-animation: bg linear infinite 6000ms;
   animation: bg linear infinite 6000ms;
-  -webkit-perspective-origin: center center;
-  perspective-origin: center center;
+  -webkit-animation: bg linear infinite 6000ms;
+  -moz-animation: bg linear infinite 6000ms;
+  -o-animation: bg linear infinite 6000ms;
+  -webkit-animation-name: bg;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 
 @media screen and (max-width: 767px) {
@@ -211,7 +382,7 @@ body::-webkit-scrollbar {
 }
 
 .fade {
- -webkit-animation:  fadeInAnimation ease 3s;
+  -webkit-animation: fadeInAnimation ease 3s;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
