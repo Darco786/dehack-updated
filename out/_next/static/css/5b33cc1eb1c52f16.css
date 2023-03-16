@@ -939,6 +939,7 @@ body,
 html {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .text-animation {
   animation: text 5s ease-in-out 0.8s infinite alternate;
@@ -1264,7 +1265,7 @@ body {
     background: none;
   }
 }
-* {
+main * {
   will-change: transform;
 }
 .hover\:border-white:hover {
