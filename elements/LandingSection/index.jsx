@@ -11,6 +11,8 @@ const LandingSection = ({ IBM, image }) => {
       <Container className="py-36 pb-48 lg:py-48 lg:pb-52">
         <div className="hidden md:block absolute inset-0 -z-10 lines">
           <Image
+            height={1000}
+            width={4000}
             src={image}
             alt="Landing"
             className="w-full h-full lines-image mx-auto"

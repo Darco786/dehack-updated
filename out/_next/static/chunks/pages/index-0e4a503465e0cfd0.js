@@ -26,52 +26,51 @@
         o = a.n(n),
         c = a(7294)
       let d = (e) => {
-        let {
-          link: t,
-          text: a,
-          borderWidth: i = '2px',
-          hasShadow: l = !1,
-          className: x,
-        } = e
-        return (0, s.jsxs)('div', {
-          className: 'relative w-fit mx-auto group ' + x,
-          children: [
-            (0, s.jsx)('a', {
-              href: t,
-              style: { borderWidth: i },
-              className:
-                'gradient-border relative z-10 overflow-hidden bg-black p-3 text-lg px-10 md:px-14 text-white spacing cursor-pointer',
-              children: a,
-            }),
-            l &&
-              (0, s.jsxs)('div', {
+          let {
+            link: t,
+            text: a,
+            borderWidth: i = '2px',
+            hasShadow: l = !1,
+            className: x,
+          } = e
+          return (0, s.jsxs)('div', {
+            className: 'relative w-fit mx-auto group ' + x,
+            children: [
+              (0, s.jsx)('a', {
+                href: t,
+                style: { borderWidth: i },
                 className:
-                  'flex items-center absolute gradient -top-4 w-full !animate-none -z-2',
-                children: [
-                  (0, s.jsx)('div', {
-                    className:
-                      'green !w-[50%] !h-[80px] group-hover:!h-[100px] group-hover:!w-[120px] transitions !blur-xl',
-                  }),
-                  (0, s.jsx)('div', {
-                    className:
-                      'blue !w-[50%] !h-[80px] group-hover:!h-[100px] group-hover:!w-[120px] transitions !blur-xl',
-                  }),
-                ],
+                  'gradient-border relative z-10 bg-black p-3 text-lg px-10 md:px-14 text-white spacing cursor-pointer',
+                children: a,
               }),
-          ],
-        })
-      }
-      a(1163)
-      let h = (e) => {
-        let { children: t, className: a } = e
-        return (0, s.jsx)('div', {
-          className:
-            'w-full h-full max-w-[1600px] md:px-4 lg:px-10 xl:px-40 mx-auto '.concat(
-              a
-            ),
-          children: t,
-        })
-      }
+              l &&
+                (0, s.jsxs)('div', {
+                  className:
+                    'flex items-center absolute gradient -top-4 w-full !animate-none -z-2',
+                  children: [
+                    (0, s.jsx)('div', {
+                      className:
+                        'green !w-[50%] !h-[80px] group-hover:!h-[100px] group-hover:!w-[120px] transitions !blur-xl',
+                    }),
+                    (0, s.jsx)('div', {
+                      className:
+                        'blue !w-[50%] !h-[80px] group-hover:!h-[100px] group-hover:!w-[120px] transitions !blur-xl',
+                    }),
+                  ],
+                }),
+            ],
+          })
+        },
+        h = (e) => {
+          let { children: t, className: a } = e
+          return (0, s.jsx)('div', {
+            className:
+              'w-full h-full max-w-[1600px] md:px-4 lg:px-10 xl:px-40 mx-auto '.concat(
+                a
+              ),
+            children: t,
+          })
+        }
       var m = {
           src: '/_next/static/media/Menu.e1360124.svg',
           height: 15,
@@ -235,7 +234,7 @@
           return (0, s.jsx)('h3', {
             className: ''.concat(
               t.className,
-              ' m-0 text-white font-medium tracking-wider uppercase text-7xl md:text-[150px] overflow-hidden'
+              ' m-0 text-white font-medium tracking-wider uppercase text-7xl md:text-[150px]'
             ),
             children: a,
           })
@@ -250,6 +249,8 @@
                 (0, s.jsx)('div', {
                   className: 'hidden md:block absolute inset-0 -z-10 lines',
                   children: (0, s.jsx)(o(), {
+                    height: 1e3,
+                    width: 4e3,
                     src: a,
                     alt: 'Landing',
                     className: 'w-full h-full lines-image mx-auto',
@@ -482,7 +483,12 @@
                     className:
                       'flex flex-col md:flex-row gap-6 lg:gap-10 md:items-center mb-4',
                     children: [
-                      (0, s.jsx)(o(), { src: t, alt: 'Rect', width: 80 }),
+                      (0, s.jsx)(o(), {
+                        src: t,
+                        alt: 'Rect',
+                        width: 80,
+                        height: 80,
+                      }),
                       (0, s.jsxs)('div', {
                         className: 'flex flex-col gap-1 2xl:gap-2',
                         children: [
@@ -802,6 +808,8 @@
                 className: 'w-[45px] aspect-square md:w-[60px] 2xl:w-[85px]',
                 src: t,
                 alt: a,
+                height: 85,
+                width: 85,
               }),
               (0, s.jsx)('p', {
                 className:
@@ -1030,6 +1038,8 @@
                     className:
                       'w-[295px] fade lg:w-[400px] lg:h-[400px] transitions fade',
                     alt: t,
+                    width: 400,
+                    height: 400,
                   }),
               }),
             ],
@@ -1215,6 +1225,8 @@
                                     className:
                                       'w-[295px] fade lg:w-[400px] lg:h-[250px] transitions fade',
                                     alt: a,
+                                    width: 400,
+                                    height: 400,
                                   }),
                               }),
                             ],
@@ -1378,11 +1390,11 @@
           blurHeight: 0,
         }
       let Q = () => {
-        let [e, t] = (0, c.useState)({ width: 0, height: 0 })
+        let [e, t] = (0, c.useState)(0)
         return (
           (0, c.useEffect)(() => {
             let e = () => {
-              t({ width: window.innerWidth, height: window.innerHeight })
+              t(window.innerWidth)
             }
             return (
               e(),
@@ -1390,7 +1402,7 @@
               () => window.removeEventListener('resize', e)
             )
           }, []),
-          e
+          { width: e }
         )
       }
       function ee() {
@@ -1440,6 +1452,8 @@
                         ],
                       }),
                       (0, s.jsx)(o(), {
+                        width: e >= 768 ? 1400 : 250,
+                        height: 120,
                         className: 'mx-auto mt-5 md:mt-10',
                         src: e >= 768 ? N : D,
                         alt: 'Supported',
@@ -1503,7 +1517,7 @@
     },
   },
   function (e) {
-    e.O(0, [296, 747, 774, 888, 179], function () {
+    e.O(0, [296, 227, 774, 888, 179], function () {
       return e((e.s = 5557))
     }),
       (_N_E = e.O())

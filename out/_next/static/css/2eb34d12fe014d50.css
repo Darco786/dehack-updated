@@ -940,9 +940,6 @@ html {
   max-width: 100vw;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
 .text-animation {
   animation: text 5s ease-in-out 0.8s infinite alternate;
   -webkit-animation: text 5s ease-in-out 0.8s infinite;
@@ -1266,6 +1263,9 @@ body {
   .footer-list {
     background: none;
   }
+}
+* {
+  will-change: transform;
 }
 .hover\:border-white:hover {
   --tw-border-opacity: 1;

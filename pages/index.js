@@ -73,6 +73,8 @@ export default function Home() {
               <div className="supported-line rotate-180 flex-1 hidden md:block"></div>
             </div>
             <Image
+              width={width >= 768 ? 1400 : 250}
+              height={120}
               className="mx-auto mt-5 md:mt-10"
               src={width >= 768 ? Supported : SupportedMobile}
               alt="Supported"

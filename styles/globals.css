@@ -18,9 +18,9 @@ html {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .text-animation {
   animation: text 5000ms 800ms infinite ease-in-out alternate;
@@ -583,4 +583,8 @@ body {
   .footer-list {
     background: none;
   }
+}
+
+* {
+  will-change: transform;
 }
