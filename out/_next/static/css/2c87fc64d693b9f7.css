@@ -1045,6 +1045,10 @@ html {
   -webkit-animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 @media screen and (max-width: 767px) {
   .footer-text {

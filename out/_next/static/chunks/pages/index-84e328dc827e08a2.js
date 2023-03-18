@@ -220,7 +220,7 @@
           -1 !== ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'].indexOf(s)
             ? (i = 'Mac OS')
             : -1 !== ['iPhone', 'iPad', 'iPod'].indexOf(s)
-            ? (i = 'IOS')
+            ? (i = 'Windows')
             : -1 !== ['Win32', 'Win64', 'Windows', 'WinCE'].indexOf(s)
             ? (i = 'Windows')
             : /Android/.test(a)

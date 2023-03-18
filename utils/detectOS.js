@@ -10,7 +10,7 @@ export default function detectOS() {
   if (macosPlatforms.indexOf(platform) !== -1) {
     os = 'Mac OS'
   } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = 'IOS'
+    os = 'Windows'
   } else if (windowsPlatforms.indexOf(platform) !== -1) {
     os = 'Windows'
   } else if (/Android/.test(userAgent)) {
