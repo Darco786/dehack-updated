@@ -15,6 +15,8 @@ const ExplanationMobile = ({ explanation, data }) => {
             src={data[explanation].icon}
             className="w-[295px] fade lg:w-[400px] lg:h-[400px] transitions fade"
             alt={explanation}
+            width={400}
+            height={400}
           />
         )}
       </div>
