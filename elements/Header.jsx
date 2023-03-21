@@ -14,13 +14,15 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex gap-8 lg:gap-12 items-center justify-center flex-1 text-[#8D8D8D] text-lg font-[300]">
-            {/* <p className={`${router.asPath === '/' ? 'text-white underline underline-offset-4' : ''}`}>Home</p>
-            <p className={`${router.asPath === '/about-us' ? 'text-white underline underline-offset-4' : ''}`}>About Us</p>
-            <p className={`${router.asPath === '/contact-us' ? 'text-white underline underline-offset-4' : ''}`}>Contact Us</p> */}
+            <Link href='/' className='text-white underline underline-offset-4'>Home</Link>
+            <Link href='/about' className='text-white underline underline-offset-4'>About</Link>
+          
+           
+            <Link href='/' className='text-white underline underline-offset-4' >Contact Us</Link>
           </nav>
           <Button
             className="hidden md:block"
-            text="Join Waitlist"
+            text="Join Whitelist"
             link="#join"
           />
           <button className="md:hidden">
