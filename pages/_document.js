@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body style={{ fontFamily: 'Brinnan, sans-serif' }}>
+      <body>
         <Main />
         <NextScript />
       </body>

@@ -8,6 +8,8 @@ const WorkItem = ({ image, title, desc }) => {
         className="w-[45px] aspect-square md:w-[60px] 2xl:w-[85px]"
         src={image}
         alt={title}
+        height={85}
+        width={85}
       />
       <p className="text-sm md:text-xl 2xl:text-[28px] font-semibold max-w-[250px] h-[30px] md:h-[45px]">
         {title}
