@@ -9,6 +9,7 @@ import Icon2 from '@/public/icons/Icon2.gif'
 import Icon3 from '@/public/icons/Icon3.gif'
 import Grid2 from '@/public/icons/Grid2.svg'
 import Supported from '@/public/icons/Supported.svg'
+import SupportedTab from '@/public/icons/SupportedTab.svg'
 import SupportedMobile from '@/public/icons/SupportedMobile.svg'
 import Footer from '@/elements/Footer'
 import LandingSection from '@/elements/LandingSection'
@@ -73,10 +74,15 @@ export default function Home() {
               <div className="supported-line rotate-180 flex-1 hidden md:block"></div>
             </div>
             <Image
-              width={width >= 768 ? 1400 : 250}
               height={120}
-              className="mx-auto mt-5 md:mt-10"
-              src={width >= 768 ? Supported : SupportedMobile}
+              className="mx-auto mt-5 md:mt-10 w-[300px] md:w-[500px] xl:w-[1200px]"
+              src={
+                width < 768
+                  ? SupportedMobile
+                  : width < 1280
+                  ? SupportedTab
+                  : Supported
+              }
               alt="Supported"
             />
           </Container>

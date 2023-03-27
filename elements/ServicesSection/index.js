@@ -18,12 +18,12 @@ const ServicesSection = ({ images, IBM, width }) => {
           <div className="blue !w-[400px] !h-[600px]"></div>
         </div>
         <div className="flex flex-col gap-10 lg:gap-14 items-center relative z-0">
-          <h3 className="font-[250] text-3xl px-16 spacing md:px-0 md:text-7xl text-center">
+          <h3 className="font-[250] text-3xl px-16 spacing md:px-0 md:text-4xl lg:text-7xl text-center">
             How <span className="font-normal">DeHack</span> can help
           </h3>
           <div className=" w-full max-w-[1000px] line"></div>
           {width >= 768 && (
-            <div className="hidden md:grid grid-cols-4 md:grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
+            <div className="hidden md:grid grid-cols-2 gap-12 mt-10">
               <Monit
                 serviceTitle="Monitor"
                 shortDesc="Track Real Time Activity Of Your Project"
@@ -100,7 +100,7 @@ const ServicesSection = ({ images, IBM, width }) => {
               </SwiperSlide>
             </Swiper>
           )}
-          <h4 className="text-[25px] md:text-[45px] font-[250] text-center px-10 lg:px-20">
+          <h4 className="text-[25px] md:text-[30px] lg:text-[45px] font-[250] text-center px-10 lg:px-20">
             DeHack brings <span className="font-normal">AI</span> to blockchain
             to improve{' '}
             <span className="font-normal">

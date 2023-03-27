@@ -19,11 +19,11 @@ const Header = () => {
             <p className={`${router.asPath === '/contact-us' ? 'text-white underline underline-offset-4' : ''}`}>Contact Us</p> */}
           </nav>
           <Button
-            className="hidden md:block"
+            className="hidden xl:block"
             text="Join Waitlist"
             link="#join"
           />
-          <button className="md:hidden">
+          <button className="xl:hidden">
             <Image src={Menu} alt="Nav bar" />
           </button>
         </div>

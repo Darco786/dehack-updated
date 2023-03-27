@@ -15,7 +15,7 @@ const StatsSection = ({ IBM }) => {
               <span className="text-white font-normal">Proactive Security</span>
             </h3>
             <div className=" w-full max-w-[1000px] line"></div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 lg:gap-14">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 lg:gap-14">
               <div className="flex flex-col gap-3 items-start">
                 <p>
                   <span
@@ -34,7 +34,7 @@ const StatsSection = ({ IBM }) => {
                     Bn
                   </span>
                 </p>
-                <p className="font-light md:font-normal spacing md:!tracking-normal md:text-lg 2xl:text-xl">
+                <p className="font-light lg:font-normal spacing lg:!tracking-normal text-sm lg:text-lg 2xl:text-xl">
                   Reported loss in 2021 and 2022
                 </p>
               </div>
@@ -56,7 +56,7 @@ const StatsSection = ({ IBM }) => {
                     Mn
                   </span>
                 </p>
-                <p className="font-light md:font-normal spacing md:!tracking-normal md:text-lg 2xl:text-xl">
+                <p className="font-light lg:font-normal spacing lg:!tracking-normal text-sm lg:text-lg 2xl:text-xl">
                   Already Lost in the month of February of 2023
                 </p>
               </div>
@@ -73,7 +73,7 @@ const StatsSection = ({ IBM }) => {
                     +
                   </span>
                 </p>
-                <p className="font-light md:font-normal spacing md:!tracking-normal md:text-lg 2xl:text-xl">
+                <p className="font-light lg:font-normal spacing lg:!tracking-normal text-sm lg:text-lg 2xl:text-xl">
                   Major attacks happened in the year 2022 alone
                 </p>
               </div>

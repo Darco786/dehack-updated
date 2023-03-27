@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="mx-auto max-w-[1200px]">
           <div className="w-full line"></div>
           <div className="gradient-gray p-10 py-16 flex flex-col gap-10 items-center text-center">
-            <h3 className="text-[20px] md:text-[45px] max-w-[900px] font-light">
+            <h3 className="text-[20px] md:text-[30px] lg:text-[45px] max-w-[900px] font-light">
               <span className="font-normal">Secure</span> your project with the
               most advanced <span className="font-normal">Web3 security</span>{' '}
               system <span className="font-normal">now!</span>

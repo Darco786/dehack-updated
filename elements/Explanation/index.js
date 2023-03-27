@@ -52,12 +52,12 @@ const Explanation = ({ width }) => {
           </div>
         )}
         <div className="bg-[#141414] rounded-[20px] md:rounded-[40px] p-10 py-16 md:p-16 lg:p-24 flex flex-col gap-12 items-center">
-          <h3 className="text-center font-thin text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl">
-            How <span className="font-normal">DeHack</span> Secures..
+          <h3 className="text-center font-thin text-3xl md:text-4xl xl:text-6xl 2xl:text-7xl">
+            How <span className="font-normal">DeHack</span> Works
           </h3>
           <div className="w-full max-w-2xl line"></div>
           <div className="flex flex-col gap-16 lg:gap-28">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 md:px-6 lg:px-20">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:px-6 lg:px-20">
               <div className="flex flex-col gap-4">
                 <ExplanationItem
                   explanation={explanation}
@@ -100,20 +100,19 @@ const Explanation = ({ width }) => {
               </div>
             </div>
             {width >= 768 && (
-              <div className="hidden md:flex how-works-gradient p-8 px-10 md:px-16 xl:px-20 rounded-[20px] min-h-[215px] xl:items-center flex-col-reverse md:flex-col xl:flex-row relative">
-                <ul className="flex flex-col transitions gap-2 list-none text-lg md:text-xl 2xl:text-2xl md:font-[250] spacing">
+              <div className="hidden md:flex how-works-gradient p-8 px-10 md:px-16 xl:px-20 rounded-[20px] xl:items-center relative w-full">
+                <ul className="flex flex-col transitions gap-2 list-none text-sm lg:text-base xl:text-xl 2xl:text-2xl lg:font-[250] spacing">
                   {data[explanation].items.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
-                <div className="xl:absolute right-0  mx-auto">
+                <div className="absolute right-0 -top-[20%] lg:-top-[35%] xl:-top-[20%] mx-auto">
                   {data[explanation].icon && (
                     <Image
                       src={data[explanation].icon}
-                      className="w-[295px] fade lg:w-[400px] lg:h-[250px] transitions fade"
+                      className="fade lg:h-[250px] transitions fade"
                       alt={explanation}
-                      width={400}
-                      height={400}
+                      width={width <= 768 ? 190 : width <= 1024 ? 250 : 400}
                     />
                   )}
                 </div>

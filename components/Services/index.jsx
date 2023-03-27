@@ -8,7 +8,7 @@ const Service = ({ image, IBM, serviceTitle, shortDesc, desc }) => {
         <div className="blue !blur-[100px]"></div>
       </div>
       <div className="gradient-border !rounded-[15px] md:!rounded-[7px] md:min-w-[300px] relative z-10 p-6 md:px-12 2xl:px-20 hover:border-white transitions !border-2 md:!border-[3px]">
-        <div className="flex flex-col md:flex-row gap-6 lg:gap-10 md:items-center mb-4">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 lg:items-center mb-4">
           <Image src={image} alt="Rect" width={80} height={80} />
           <div className="flex flex-col gap-1 2xl:gap-2">
             <h4

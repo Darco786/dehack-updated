@@ -8,7 +8,7 @@ const ExplanationItem = ({ text, explanation, setExplanation }) => {
       }
       onClick={() => setExplanation(text)}
       role="button"
-      className={`border border-white/20 p-4 px-8 md:w-[200px] 2xl:w-[230px] h-[85px] transitions flex items-center justify-center bg-[#111111] rounded-lg backdrop-blur-lg ${
+      className={`border border-white/20 p-4 px-8 min-w-[137px] xl:w-[200px] 2xl:w-[230px] lg:h-[85px] transitions flex items-center justify-center bg-[#111111] rounded-lg backdrop-blur-lg ${
         text === explanation ? 'gradient-border-explanation' : ''
       }`}
     >
